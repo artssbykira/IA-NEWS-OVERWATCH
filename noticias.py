@@ -3,7 +3,7 @@
 Robo de noticias de Overwatch para o Discord do KIRA.
 
 A cada execucao:
-  1. le as fontes (forum oficial da Blizzard, YouTube do Overwatch, Reddit)
+  1. le as fontes (forum da Blizzard, OW Cavalry, Google Noticias, YouTube, Reddit)
   2. separa o que ainda nao foi postado (vistos.json)
   3. a IA (Gemini, camada gratis) resume em portugues e diz se afeta o Doomfist
   4. posta no #overwatch-news e, quando for o caso, no #doomfist
@@ -24,6 +24,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -36,14 +37,34 @@ UA = 'Mozilla/5.0 (compatible; KiraNewsBot/1.0; +https://linktr.ee/kira_owbr)'
 # Nao posta nada mais antigo que isso, mesmo que nunca tenha sido visto.
 IDADE_MAXIMA = timedelta(days=3)
 
+# 'max' = quantos itens novos no maximo por rodada (Google Noticias traz dezenas).
+# 'oficial' = no plano B sem IA, posta mesmo sem saber se e relevante.
+def gnews(busca, hl, gl, lang):
+    # "Overwatch" sozinho tambem e palavra comum em ingles (vigilancia): traz drone, K-pop...
+    # Por isso a busca amarra em termos do jogo.
+    return (f'https://news.google.com/rss/search?q={urllib.parse.quote(busca)}'
+            f'&hl={hl}&gl={gl}&ceid={gl}:{lang}')
 FONTES = [
-    {'id': 'forum', 'nome': 'Blizzard - Anuncios oficiais', 'cor': 0xF99E1A,
+    {'id': 'forum', 'nome': 'Blizzard - Anuncios oficiais', 'cor': 0xF99E1A, 'oficial': True,
      'url': 'https://us.forums.blizzard.com/en/overwatch/c/announcements/5.rss'},
-    {'id': 'youtube', 'nome': 'YouTube - Overwatch', 'cor': 0xFF0000,
+    {'id': 'blizzard-tracker', 'nome': 'Blizzard - Devs no forum', 'cor': 0xF99E1A,
+     'url': 'https://us.forums.blizzard.com/en/overwatch/g/blizzard-tracker/posts.rss'},
+    {'id': 'owcavalry', 'nome': 'OW Cavalry', 'cor': 0x1185FE, 'oficial': True,
+     'url': 'https://bsky.app/profile/owcavalry.com/rss'},
+    {'id': 'youtube', 'nome': 'YouTube - Overwatch', 'cor': 0xFF0000, 'oficial': True,
      'url': 'https://www.youtube.com/feeds/videos.xml?channel_id=UClOf1XXinvZsy4wKPAkro2A'},
+    {'id': 'gnews-en', 'nome': 'Google Noticias', 'cor': 0x4285F4, 'max': 6,
+     'url': gnews('"Overwatch" (Blizzard OR hero OR patch OR season OR Stadium OR esports OR "World Cup") when:2d',
+                  'en-US', 'US', 'en')},
+    {'id': 'gnews-pt', 'nome': 'Google Noticias (BR)', 'cor': 0x4285F4, 'max': 4,
+     'url': gnews('Overwatch (Blizzard OR herói OR temporada OR patch) when:2d', 'pt-BR', 'BR', 'pt-419')},
+    {'id': 'gnews-doom', 'nome': 'Google Noticias', 'cor': 0x4285F4, 'max': 4,
+     'url': gnews('Doomfist Overwatch when:7d', 'en-US', 'US', 'en')},
     # O Reddit as vezes recusa (429/403). Quando falha, o robo so pula a fonte.
     {'id': 'reddit-ow', 'nome': 'Reddit - r/Overwatch', 'cor': 0xFF4500,
      'url': 'https://www.reddit.com/r/Overwatch/top/.rss?t=day&limit=10'},
+    {'id': 'reddit-comp', 'nome': 'Reddit - r/Competitiveoverwatch', 'cor': 0xFF4500,
+     'url': 'https://www.reddit.com/r/Competitiveoverwatch/top/.rss?t=day&limit=10'},
     {'id': 'reddit-doom', 'nome': 'Reddit - r/DoomfistMains', 'cor': 0xFF4500,
      'url': 'https://www.reddit.com/r/DoomfistMains/top/.rss?t=day&limit=10'},
 ]
@@ -123,7 +144,26 @@ def ler_fonte(fonte):
             })
     for it in itens:
         it['fonte'] = fonte
+        if not it['titulo']:  # Bluesky nao tem titulo: usa o comeco do post
+            it['titulo'] = it['texto'].split('\n')[0][:90]
     return itens
+
+
+def palavras(titulo):
+    t = re.sub(r'\s+-\s+[^-]+$', '', titulo.lower())  # tira " - Nome do Site" do Google Noticias
+    return {w for w in re.findall(r'[a-z0-9À-ÿ]+', t) if len(w) > 2}
+
+
+def parecido(titulo, recentes):
+    """Mesma noticia vinda de outra fonte? Compara as palavras do titulo."""
+    a = palavras(titulo)
+    if len(a) < 3:
+        return False
+    for r in recentes:
+        b = palavras(r['titulo_original'])
+        if b and len(a & b) / len(a | b) >= 0.55:
+            return True
+    return False
 
 
 # ---------------------------------------------------------------- IA (Gemini gratis)
@@ -137,7 +177,8 @@ Leia a publicacao abaixo e responda APENAS com um JSON neste formato:
   "titulo": "titulo curto em portugues do Brasil, ate 90 caracteres",
   "resumo": "resumo em portugues do Brasil, 2 a 6 linhas comecando com '• ', ate 700 caracteres",
   "doomfist": true/false,
-  "doomfist_resumo": "o que muda para o Doomfist, em portugues do Brasil"
+  "doomfist_resumo": "o que muda para o Doomfist, em portugues do Brasil",
+  "ja_postado": true/false
 }}
 
 Regras:
@@ -151,7 +192,13 @@ Regras:
 - "doomfist_resumo": liste cada mudanca com o numero antes -> depois (ex.: "Seismic Slam: dano 50 -> 60"),
   inclua comentarios dos desenvolvedores se houver e separe o que e do 5v5 e do Stadium.
   Ate 1200 caracteres. Deixe "" se "doomfist" for false.
-- Nao invente nada que nao esteja no texto. Mantenha nomes de habilidades em ingles.
+- "ja_postado" = true se o ASSUNTO desta publicacao ja estiver na lista "Ja postado recentemente"
+  abaixo (a mesma noticia vinda de outro site ou rede). Nesse caso nada sera postado.
+- Nao invente nada que nao esteja no texto. Se so houver a manchete (Google Noticias), resuma em
+  1 ou 2 linhas apenas com o que a manchete diz. Mantenha nomes de habilidades em ingles.
+
+Ja postado recentemente:
+{recentes}
 
 Fonte: {fonte}
 Titulo: {titulo}
@@ -196,7 +243,7 @@ def gemini(prompt):
 def sem_ia(item):
     """Plano B quando nao ha chave ou a IA falha: palavra-chave e trecho do texto."""
     texto = item['texto']
-    oficial = item['fonte']['id'] in ('forum', 'youtube')
+    oficial = bool(item['fonte'].get('oficial'))
     m = re.search(r'doom ?fist', texto, re.I) or re.search(r'doom ?fist', item['titulo'], re.I)
     trecho = ''
     if m and m.string is texto:
@@ -213,10 +260,11 @@ def sem_ia(item):
     }
 
 
-def analisar(item, usar_ia=True):
+def analisar(item, recentes, usar_ia=True):
     if usar_ia and os.environ.get('GEMINI_API_KEY'):
+        lista = '\n'.join(f'- {r["titulo"]}' for r in recentes[-40:]) or '(nada)'
         r = gemini(PROMPT.format(fonte=item['fonte']['nome'], titulo=item['titulo'],
-                                 texto=item['texto'][:120000]))
+                                 texto=item['texto'][:120000], recentes=lista))
         time.sleep(7)  # camada gratis: ~10 pedidos por minuto
         if isinstance(r, dict) and 'relevante' in r:
             return r
@@ -297,52 +345,84 @@ def main():
             log(f'{fonte["nome"]}: pulada ({e.__class__.__name__}: {e})')
 
     agora = datetime.now(timezone.utc)
+    est.setdefault('fontes', [])
+    est.setdefault('recentes', [])
+
+    def visto(i):
+        est['vistos'][i['id']] = i['data'].isoformat()
+
     if a.postar_ultimo:
         patches = sorted([i for i in todos if i['fonte']['id'] == 'forum' and 'patch' in i['titulo'].lower()],
                          key=lambda i: i['data'])
         novos = patches[-a.postar_ultimo:]
         log(f'Modo teste: postando {len(novos)} nota(s) de patch mesmo que ja vista(s)')
     else:
+        # Fonte que aparece pela primeira vez: marca o que ela ja tem como visto, para nao
+        # despejar o historico no canal. Vale para a primeira execucao e para fontes novas.
+        for fid in sorted({i['fonte']['id'] for i in todos} - set(est['fontes'])):
+            da_fonte = [i for i in todos if i['fonte']['id'] == fid]
+            for i in da_fonte:
+                visto(i)
+            est['fontes'].append(fid)
+            log(f'Fonte nova "{fid}": {len(da_fonte)} itens marcados como ja vistos (nada postado)')
+
         novos = [i for i in todos if i['id'] not in est['vistos']]
-        if not est.get('semeado'):
-            # primeira execucao: marca tudo como visto para nao despejar o historico no canal
-            for i in novos:
-                est['vistos'][i['id']] = i['data'].isoformat()
-            est['semeado'] = True
-            if not a.seco:
-                salvar_estado(est)
-            log(f'Primeira execucao: {len(novos)} itens marcados como ja vistos. Nada postado.')
-            return 0
-        recentes = [i for i in novos if agora - i['data'] <= IDADE_MAXIMA]
-        for i in novos:
-            if i not in recentes:
-                est['vistos'][i['id']] = i['data'].isoformat()
-        novos = recentes
+        for i in [i for i in novos if agora - i['data'] > IDADE_MAXIMA]:
+            visto(i)  # velho demais para ser noticia
+        novos = [i for i in novos if agora - i['data'] <= IDADE_MAXIMA]
+
+        # Google Noticias traz dezenas por dia: fica so com os mais novos de cada fonte
+        filtrados = []
+        for fonte in FONTES:
+            da_fonte = sorted([i for i in novos if i['fonte'] is fonte], key=lambda i: i['data'], reverse=True)
+            limite = fonte.get('max', 99)
+            filtrados += da_fonte[:limite]
+            for i in da_fonte[limite:]:
+                visto(i)
+        novos = filtrados
 
     novos.sort(key=lambda i: i['data'])
     log(f'{len(novos)} item(ns) novo(s) para analisar')
-    postados = doom = 0
+    postados = doom = repetidos = 0
     for item in novos:
         log(f'- {item["fonte"]["nome"]}: {item["titulo"][:90]}')
-        r = analisar(item, usar_ia)
+        if not a.postar_ultimo and parecido(item['titulo'], est['recentes']):
+            log('  mesma noticia ja postada por outra fonte, pulando')
+            repetidos += 1
+            visto(item)
+            continue
+        r = analisar(item, est['recentes'], usar_ia)
+        if r.get('ja_postado') and not a.postar_ultimo:
+            log('  a IA reconheceu como assunto ja postado, pulando')
+            repetidos += 1
+            visto(item)
+            continue
         ok = True
+        postou = False
         if r.get('relevante'):
             ok = postar(wh_ow, r.get('titulo') or item['titulo'], item['link'], r.get('resumo', ''),
                         item['fonte']['nome'], item['fonte']['cor'], item['data'], a.seco)
             postados += ok
+            postou = ok
         else:
             log('  nao e noticia, fica fora do #overwatch-news')
         if r.get('doomfist') and (r.get('doomfist_resumo') or '').strip():
-            ok = postar(wh_doom, '👊 Doomfist: ' + (r.get('titulo') or item['titulo']), item['link'],
-                        r['doomfist_resumo'], item['fonte']['nome'], COR_DOOMFIST, item['data'], a.seco) and ok
-            doom += 1
+            ok_doom = postar(wh_doom, '👊 Doomfist: ' + (r.get('titulo') or item['titulo']), item['link'],
+                             r['doomfist_resumo'], item['fonte']['nome'], COR_DOOMFIST, item['data'], a.seco)
+            ok = ok and ok_doom
+            doom += ok_doom
+            postou = postou or ok_doom
+        if postou:
+            est['recentes'] = (est['recentes'] + [{
+                'titulo': r.get('titulo') or item['titulo'], 'titulo_original': item['titulo'],
+                'data': item['data'].isoformat()}])[-60:]
         if ok and not a.postar_ultimo:
-            est['vistos'][item['id']] = item['data'].isoformat()
+            visto(item)
             if not a.seco:
                 salvar_estado(est)  # salva a cada item: se cair no meio, nao repete
     if not a.seco:
         salvar_estado(est)
-    log(f'Fim: {postados} no #overwatch-news, {doom} no #doomfist')
+    log(f'Fim: {postados} no #overwatch-news, {doom} no #doomfist, {repetidos} repetido(s) evitado(s)')
     return 0
 
 

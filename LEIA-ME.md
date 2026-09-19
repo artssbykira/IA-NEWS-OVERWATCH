@@ -2,12 +2,18 @@
 
 A cada 3 horas ele:
 
-1. lê o **fórum oficial da Blizzard** (anúncios e notas de patch completas), o **YouTube do Overwatch** e o **Reddit** (r/Overwatch e r/DoomfistMains)
-2. pega só o que é novo
+1. lê estas fontes:
+   - **fórum oficial da Blizzard**: anúncios, notas de patch completas e respostas dos desenvolvedores (Blizzard Tracker)
+   - **OW Cavalry** (pela conta deles no Bluesky, que espelha o X — o X não tem leitura gratuita)
+   - **Google Notícias**: Overwatch em inglês, Overwatch em português e tudo que cite o Doomfist
+   - **YouTube do Overwatch**
+   - **Reddit**: r/Overwatch, r/Competitiveoverwatch e r/DoomfistMains
+2. pega só o que é novo e **não repete o mesmo assunto** vindo de fontes diferentes
+   (compara o título e a IA confere contra os últimos 40 posts)
 3. a **IA Gemini (grátis)** resume em português e decide se aquilo afeta o Doomfist
 4. posta:
    - no **#overwatch-news** → toda notícia de verdade (memes e clipes ficam de fora)
-   - no **#doomfist** → só o que muda para o Doom, com os números antes → depois (5v5 e Stadium)
+   - no **#doomfist** → só o que muda para o Doom, com os números antes → depois (5v5, 6v6 e Stadium)
 
 Custo: **zero**. Roda no GitHub Actions (grátis) e usa a camada gratuita do Gemini.
 Não precisa deixar o PC ligado.
