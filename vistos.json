@@ -589,8 +589,16 @@
   "t3_1wue4y1": "2026-09-30T19:20:59+00:00",
   "CBMib0FVX3lxTE5qR1Nya292OWdGam8tcWNpTnVJamk5UXE1VEpUVWhxeWdJMEJJd21tRFJjVFBzSkl5c21kRzRNM1QtYjZsQTVVdVU5aF9qOHdnVEw5XzIzZURZU0xMZmkxa3lCYngyazZlVWV3dWtGNA": "2026-09-30T20:17:47+00:00",
   "CBMitwFBVV95cUxOd09HYmNyQnV4cVlNMFN1TXpuWW9EMUJNZFhndmxGR1A3b2IwNU9wYnFnaVVOdmJleFhHZkFwOVpqaGlLWkdLanQ3eTc2bHpSd29sWnljdFlOLTloWXd1QU1UU2EzNGZsQVctdkk1bF95RktUVlVmb0VPSzJEeHhMNU9ub1VfRDNjcTh2b2FSM085RF84N0FnR3hubGVXNzJmZnFocUNFRFljR0EydzBxU0JlZFlib00": "2026-09-30T20:28:03+00:00",
+  "t3_1wug5pj": "2026-09-30T20:39:13+00:00",
   "t3_1wuh0ex": "2026-09-30T21:13:32+00:00",
-  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mwrbcgx5qs2p": "2026-09-30T21:16:00+00:00"
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mwrbcgx5qs2p": "2026-09-30T21:16:00+00:00",
+  "CBMigAFBVV95cUxNNzRzLVNIQUtqTkJiblpsenZoOW9WUHVzSVVVdVYyVXFMS1AtNDdUQlNRb3NPZE9wdnM4MGNYVEQzdFprUDdfazBydnpuamxVTmNCSWYwT2d0ZGdOZkU5cVJfdkNqWVR5SEUwZUpVRGZxLXZyN3VwVlNPT292NEVzUA": "2026-10-01T00:52:51+00:00",
+  "t3_1wunega": "2026-10-01T02:06:21+00:00",
+  "t3_1wunll1": "2026-10-01T02:16:21+00:00",
+  "t3_1wupqnn": "2026-10-01T04:08:03+00:00",
+  "CBMiiwFBVV95cUxOMklLNVo5ckVVODY2ZmZrSmlpOWF0Um1sNTVjQkJ4MUNVVVBpaFBUbWRoVlhuWjgtX09CR3A1bkRvdkhxMEVoZ1Roa2hMdnNxR0ZPUkxNcHRaM0d3cVFBa1Q1aFBNU25pcWswZEVmR2pnNzhMakxBM0xGUmE0VWdjRzBCTkszaEJrQmhz0gGQAUFVX3lxTE0tUmtjdksxT2FGN0Zya3E3NllqVkR0RFRubDU0dV83bXUtbV8xeGNTUWM1YlluLXdHazNFTWFNeVpiYXdiNGVqZHY2QnZGenJKdHRnSkcyZk04UmpkNU1JR1Fqcjl0dF9ZNDZVeVlGTThRTW5kOEJ3UHY1aEdvMy1KNHdQSkV2V3UxWHRvZWZ6NQ": "2026-10-01T05:15:46+00:00",
+  "CBMiuwFBVV95cUxPY01uU0NRVmU0bnZoVUxoTjV0aGoyU2F2ODJmRW0za3FuWDdwNkM4bE5VWE5ObG9vMUpBMlhsYXo1NjI5TG9ubEVBb2RRcUp0ZFNFb0VpVnZmTmVnLUlTWG5xLVh6T3ZoQzFmbjk2by1UM2lnZ0IxUm1wUlRWQlkwU3YtR1BWc3o5azdDRWhRbDdiLTB4V3JaelhOV2hLU1Q2TlZ2SzdtN3VxVEE2YmRDU29kM29DREZ1aEVR0gHAAUFVX3lxTE5NZ1l3RUJlNkJmZEpxdDVfa0dKUWIxVnR5WEpMeERkTnJ1dzdqVS13Smx3RWE0YWo3NWlib0pyVF8taTVreFR2MUxsbzZla1o5dUV4X2kxSFAwcmZYczFlNE80d1VNMlBNMndKQzROd2hha2VlZXM4dDBCTmowaFJpSkdwNWRoUmhFdXp1dlZmNjEtMVhfQ3hKbmtuUTVGUzAtZnBiMnI5OEtvU0ZuX2YtZmhMV1FPS0VfaDFkYmRxdA": "2026-10-01T06:23:59+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mwsbwrqjis2g": "2026-10-01T07:00:00+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -777,6 +785,11 @@
    "titulo": "Hero Popularity in the #Overwatch Skin Contest 👥",
    "titulo_original": "Hero Popularity in the #Overwatch Skin Contest 👥",
    "data": "2026-09-30T21:16:00+00:00"
+  },
+  {
+   "titulo": "Happy Birthday to Ashe, the leader of the Deadlock Gang in #Overwatch 🧨",
+   "titulo_original": "Happy Birthday to Ashe, the leader of the Deadlock Gang in #Overwatch 🧨",
+   "data": "2026-10-01T07:00:00+00:00"
   }
  ]
 }
