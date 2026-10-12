@@ -761,12 +761,15 @@
   "CBMihgFBVV95cUxNd1NQOVFxbHJLUEFvZXZKLWp2dDEtMk9PWEYzcmx3QVhYMXlsYWJsdXBhenZTVXNTNE1jY1lzV25DX0RuU3R3QVo1M0c2NTItN19zRTI5V2ZGdjVkMkZLbGY2S2NBUEFfLVoyYUR4c1lIclBZU1h3YlYycGZBeVpPQVk3UmFiZw": "2026-10-06T19:30:16+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxa6gl42vk2a": "2026-10-06T19:35:00+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxa6wpfek22q": "2026-10-06T19:44:00+00:00",
+  "CBMilgFBVV95cUxNN2J3Sy1YYmRGcjdjWXczRm1ldWI0UWhySmwxQnVJV3doUzJYVTNFNWM1Tl9vWFpWQkhvLWpxMU9jSUl4UTRaR1o0VG5HWnpvWlVHZEtYVk9YZy00Sm5ncWJJUGI3RGdJelVEVkVZanJIR3NncmlxVVhuQ2RPOGcxYVVIRVVyV2puWFBZSV9JMzJ0RDhmLVE": "2026-10-06T19:59:05+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxaac7nx5s2t": "2026-10-06T20:08:00+00:00",
   "yt:video:4d4LFB-w6ZA": "2026-10-06T21:00:42+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxadmoemv22n": "2026-10-06T21:08:00+00:00",
+  "CBMigwFBVV95cUxPTmxERGNxTDFRYXdWbTNxSFp5b1Y1MmhHN0FTYzZXT19jcTVOQUVXZ09nTGRSdDliU2puZ2VQbTdYMzRPNzhnVF9ISFQ1eFpoc1pOcXNFR2NhdUVSRkF1UGZoWWRXVEJTdmt2QUYzeTNMQkJkbFpjelZrNVB3VE1TOTZPaw": "2026-10-06T21:12:00+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxadviqdhk2n": "2026-10-06T21:13:00+00:00",
   "CBMiwwFBVV95cUxOZkc5TUZXT201R0dsejBfZ25Lc08yakNvN09xd0lsbW82M1E0T0NET0VvLVRMRlVGcVlCZk1rZE1YX1dNbmZHVWxpYUVUajdIUnhhS0FCS0t3ZmV3U2s1QlVxb2FtaWpIRk9DblpUT2x1a2tjUlFEQnZHQ1d2S1hmTnN1M2FRRGJqLThqWUxQLUJ5M05JQVdHdUQ4TjRCdnZkYXZkMVBWVHlpTGhhUHFkNGhzamoxM0xTbHV4SDFqSmtmRDg": "2026-10-07T03:56:35+00:00",
   "CBMiX0FVX3lxTE5KODhteXduMUxOaVpCbVNTRHozRk1KMUpJbWhCdWdwMEFfSE1DdU5MLUZWQVpNTi1uVnRDNjRSTk5uT2FNSnd6OVlFbklDU1lvSTJFMGlocmtYa2xFb05j": "2026-10-07T07:00:00+00:00",
+  "CBMivgFBVV95cUxQZVh6TWpJemphUk05bU5mQkhLOTRXRG1lY2hsV2pRajJYd09ITzZ0aFQ4Qjdyb3V0SWd5dm9YMDItR0dLdURWSFByWFUxMVpJY1VJTWpoLU1pbjBhMng4NGNRNnNVTGl0OHRWTlRYQnd5XzJoU2lqcVNxb1RRUEc1Y3BKaGtZVjNwOTlNdHZOWmo3WnB1MnFnRDdMZExGUGFfVjBVS2JkWVBlbVgwZEZYRUxvejhVdDBTTjZoR2Nn": "2026-10-07T08:23:48+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxbq7qwubc2y": "2026-10-07T10:26:00+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxc344soac2a": "2026-10-07T13:41:00+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxcknyvo422c": "2026-10-07T18:19:00+00:00",
@@ -803,7 +806,19 @@
   "t3_1x2t8yn": "2026-10-10T23:33:41+00:00",
   "t3_1x2vw8f": "2026-10-11T01:47:44+00:00",
   "CBMitgFBVV95cUxQN19TWDZOdzJranF5QVlMaXlTMVl4LXhGR3g0ckx3aUlBYk1qS3pUZDlTUUtNQlVuQXVSdHRQZDhqRWYwaE1Ib0xrVGpvSkNNdkhGeFZha1A3MVBPMWV4YnprLUJzaGI0ZVhqWlktVDBRNnNSVVVyLVRXb04yY0ZWT1ZYZk9xNExOVzBzcktJM3NRU3prenVGbzAzbWJDcUdVRU1Ud3FoODhfcHNLZWs4SmswcUJvZw": "2026-10-11T01:53:03+00:00",
-  "CBMirwFBVV95cUxPRTZXX3hBY21GdmNyc3ZhYzd0QkhlbWZpUGwzTmYwTWFQR3EyNlRBS1NyVmdFQ1RBTG5Cc2JBeHhsS3dNdFVLNUhLcTFnaXJ2TTBEdXVOSnhKOWlhdnU1VHBqU1cySzQ0VUFuV083TXFRVXJKSm1WQ3JIWkd5SjAtRktzSHNMeFNCT2NXNjdEOXFSMTZQek9hWVFHdWh1M1ljY01aR01jdmdnekZ0amlr": "2026-10-11T06:26:28+00:00"
+  "CBMirwFBVV95cUxPRTZXX3hBY21GdmNyc3ZhYzd0QkhlbWZpUGwzTmYwTWFQR3EyNlRBS1NyVmdFQ1RBTG5Cc2JBeHhsS3dNdFVLNUhLcTFnaXJ2TTBEdXVOSnhKOWlhdnU1VHBqU1cySzQ0VUFuV083TXFRVXJKSm1WQ3JIWkd5SjAtRktzSHNMeFNCT2NXNjdEOXFSMTZQek9hWVFHdWh1M1ljY01aR01jdmdnekZ0amlr": "2026-10-11T06:26:28+00:00",
+  "CBMiYEFVX3lxTE4zczdmM2hac29qWWY3b1FvNG5BM2c2WVAtNWZMN0QwV3Btc3Rja2RHVmdaR3BrbDFnMjEwMk14bWNBbUtmc0NBZjlZMEVxWlhDVUNoNGg0WmtsZldQd2RVag": "2026-10-11T10:22:47+00:00",
+  "t3_1x36qc3": "2026-10-11T12:15:30+00:00",
+  "t3_1x3a1qp": "2026-10-11T14:47:18+00:00",
+  "t3_1x3a7sf": "2026-10-11T14:54:21+00:00",
+  "t3_1x3auvc": "2026-10-11T15:20:15+00:00",
+  "t3_1x3brcz": "2026-10-11T15:57:34+00:00",
+  "t3_1x3c8uv": "2026-10-11T16:16:32+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mxmlrg3s4c2z": "2026-10-11T18:05:00+00:00",
+  "t3_1x3gcxc": "2026-10-11T18:58:25+00:00",
+  "t3_1x3jlh6": "2026-10-11T21:08:59+00:00",
+  "t3_1x3kj63": "2026-10-11T21:49:37+00:00",
+  "t3_1x3rjwc": "2026-10-12T03:38:15+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1080,6 +1095,16 @@
    "titulo": "Novos kits de Roadhog e Sombra já estão disponíveis no Overwatch",
    "titulo_original": "Roadhog & Sombra’s new kits are here 🛠️",
    "data": "2026-10-09T16:09:40+00:00"
+  },
+  {
+   "titulo": "Novas skins exclusivas da Coreia chegam ao Overwatch",
+   "titulo_original": "New #Overwatch Korean Exclusive Skins ✨",
+   "data": "2026-10-11T18:05:00+00:00"
+  },
+  {
+   "titulo": "Bug crítico deixa Doomfist totalmente invisível em partidas de Overwatch 2",
+   "titulo_original": "Doomfist currently has a pretty nasty game-breaking bug.",
+   "data": "2026-10-11T21:08:59+00:00"
   }
  ]
 }
