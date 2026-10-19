@@ -978,6 +978,7 @@
   "t3_1x8f30h": "2026-10-17T16:51:01+00:00",
   "t3_1x8gqpd": "2026-10-17T17:59:11+00:00",
   "t3_1x8h1xg": "2026-10-17T18:11:38+00:00",
+  "CBMiTEFVX3lxTFB0ZkJaY3RGSWdVM2ZaaWpsOU1GVkcwSHhDanFMMDduUEJZNFdtUlV2aldHWmN6NUxmZzJLcHM4d3BDNmstTTh6WVFFZDI": "2026-10-17T18:48:22+00:00",
   "t3_1x8it21": "2026-10-17T19:23:22+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3my3udyqfzc27": "2026-10-17T19:49:00+00:00",
   "t3_1x8kzun": "2026-10-17T20:55:43+00:00",
@@ -998,9 +999,19 @@
   "t3_1x8wtxu": "2026-10-18T07:14:42+00:00",
   "t3_1x8x5f6": "2026-10-18T07:34:26+00:00",
   "CBMihgFBVV95cUxQNlJKSVV4SGJ1UkUxaVBYY196UE9LZWxyaVhWUUdnTm83Y3JYQ2c4QktVYUNUT09ya2hfLTNxMkxqWnlFYjdUYmZ6Z3hZYVg5RTQ4S1Buc3h1WUpndHIxd2JtTTNaSy12anpsR201TllCampxd3dhcVlxdWcyWURMVjZVM3d0Zw": "2026-10-18T09:34:20+00:00",
+  "t3_1x8zn0x": "2026-10-18T10:12:21+00:00",
+  "t3_1x908zl": "2026-10-18T10:50:02+00:00",
   "CBMiekFVX3lxTE56NDVkMWtNTi1qNVJNcHplNkYzREQwUFdZLUJLSDktNWxvdzR5MHFTZmE1bFRmUkFuSTczTVpDdDgtUHJyVVFHVFlOV0pRZ1U2eVFGMkJzdUttVWpDN3ZJYzR2SmZkTVJxTWFaQTZ2ZjVjMjNJOVVBNFpn": "2026-10-18T11:35:52+00:00",
+  "t3_1x9353u": "2026-10-18T13:23:49+00:00",
+  "t3_1x93uny": "2026-10-18T13:56:36+00:00",
   "CBMiogFBVV95cUxNU25FVEpySUFwUWlpTHc0TlpCZVB3R1JjMWZONjE1NHR4ZzRoS0pERDZSSXJ6dnMySno5M2JYVmRQS2U2eER1MjNlMGYwTVhLOVBQcFNFRmhxR0NjWkpuQWZfWl9OYUJRRG1aS2hJZ0ZVZlJURDZQUXowZVJka1dtc2hyME5zclZRQmRrYkJYd2ZrSGlkWjY1dkdNZktJNVZ5UkE": "2026-10-18T14:04:56+00:00",
-  "CBMimwFBVV95cUxNd1NKLXBMbF9FNmxWcGNlZ0pMR1RobTFjeUVvS0U0elFYel85ODI5SFdwR0RHVWlMWUpzVDdxSlFEeDlsTWdxNWs4S19mRi01T0pyUUZPNUJkcWVnWlp6ZnNoT0M0dE9DTnBqSDVmd210anBtRkl0dGQ0bURkTUhMMTZxYlFlalN3TWV2Y1AxbWpSSlY0UThZUmlUdw": "2026-10-18T15:06:12+00:00"
+  "CBMimwFBVV95cUxNd1NKLXBMbF9FNmxWcGNlZ0pMR1RobTFjeUVvS0U0elFYel85ODI5SFdwR0RHVWlMWUpzVDdxSlFEeDlsTWdxNWs4S19mRi01T0pyUUZPNUJkcWVnWlp6ZnNoT0M0dE9DTnBqSDVmd210anBtRkl0dGQ0bURkTUhMMTZxYlFlalN3TWV2Y1AxbWpSSlY0UThZUmlUdw": "2026-10-18T15:06:12+00:00",
+  "t3_1x98cz6": "2026-10-18T17:04:24+00:00",
+  "t3_1x99lc2": "2026-10-18T17:53:20+00:00",
+  "t3_1x9agy2": "2026-10-18T18:27:42+00:00",
+  "t3_1x9ceg1": "2026-10-18T19:44:19+00:00",
+  "t3_1x9fab7": "2026-10-18T21:43:20+00:00",
+  "CBMivwFBVV95cUxOOW9zU0pXam90NUVhVUhQc0FoNFBVdVloWWtkVnZUVFM4bVR4OUZTMWFZUFBjS244bjQ5cG56cVZZUDFBamxrSmx0YlVPRWh1WWh5X2V2Sm0tVWN1clpZNXFPZzFqQVpnTm5zUFdUQ1hUVXJudnBqdEZ0ZXdKMm5mLUVYalYtZnBVdXNLWDlZOWhxaUUwUGNmaWFEOW1SYlViOW51Tk92NGV1bVNpbC1GMTJCY0c4aXFnVWdScmVxVQ": "2026-10-19T00:38:38+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1013,11 +1024,6 @@
   "youtube"
  ],
  "recentes": [
-  {
-   "titulo": "New #Overwatch Featured Shop Skins: ",
-   "titulo_original": "New #Overwatch Featured Shop Skins: ",
-   "data": "2026-09-22T18:09:00+00:00"
-  },
   {
    "titulo": "Another certified classic from @shellbebop  😎",
    "titulo_original": "Another certified classic from @shellbebop  😎",
@@ -1312,6 +1318,11 @@
    "titulo": "Team Liquid e NTMR vencem na Semana 2 da OWCS NA Stage 3",
    "titulo_original": "Team Liquid, NTMR pick up wins in Week 2 at OWCS NA Stage 3 - Field Level Media",
    "data": "2026-10-18T15:06:12+00:00"
+  },
+  {
+   "titulo": "As much as I like the Doomfist cell easter egg. I can't help but find it silly that Helix just hasn't repaired it or even clean it up.",
+   "titulo_original": "As much as I like the Doomfist cell easter egg. I can't help but find it silly that Helix just hasn't repaired it or even clean it up.",
+   "data": "2026-10-18T17:53:20+00:00"
   }
  ]
 }
