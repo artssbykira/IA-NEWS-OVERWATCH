@@ -97,9 +97,9 @@ def achar_imagem(item):
             link = link_real_google(link)
             if 'news.google.com/' in link:
                 return None, item.get('link')
-        if 'youtube.com/watch' in link:
-            v = urllib.parse.parse_qs(urllib.parse.urlparse(link).query).get('v', [''])[0]
-            return (f'https://i.ytimg.com/vi/{v}/hqdefault.jpg' if v else None), link
+        yt = re.search(r'(?:youtube\.com/(?:watch\?(?:.*&)?v=|shorts/|live/)|youtu\.be/)([A-Za-z0-9_-]{11})', link)
+        if yt:  # vídeo e Short do YouTube: a capa oficial do vídeo
+            return f'https://i.ytimg.com/vi/{yt.group(1)}/hqdefault.jpg', link
         final, pagina = _get(link)
         return _meta(pagina), link
     except Exception:

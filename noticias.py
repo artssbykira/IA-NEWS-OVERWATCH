@@ -240,7 +240,7 @@ PRAZO = {'fim': None}   # a rodada para de chamar a IA depois disso (sobra tempo
 
 def gemini(prompt):
     chave = os.environ.get('GEMINI_API_KEY', '').strip()
-    if not chave:
+    if not chave or getattr(gemini, 'esgotado', False):
         return None
     if not getattr(gemini, 'modelos', None):
         gemini.modelos = modelos_disponiveis(chave)
@@ -257,12 +257,19 @@ def gemini(prompt):
                 resp = json.loads(baixar(url, corpo, {'Content-Type': 'application/json',
                                                       'x-goog-api-key': chave}, timeout=45))
                 texto = resp['candidates'][0]['content']['parts'][0]['text']
+                gemini.limites = 0  # so conta 429 seguidos
                 return json.loads(texto)
             except urllib.error.HTTPError as e:
-                if e.code == 429 and tentativa == 0:
-                    log(f'  Gemini ({modelo}): limite gratis por minuto, esperando 30 s')
-                    time.sleep(30)
-                    continue
+                if e.code == 429:
+                    gemini.limites = getattr(gemini, 'limites', 0) + 1
+                    if gemini.limites >= 3:  # cota gratis do dia acabou: nao adianta esperar
+                        log('  Gemini: cota gratis esgotada nesta rodada, seguindo com o filtro por palavra-chave')
+                        gemini.esgotado = True
+                        return None
+                    if tentativa == 0:
+                        log(f'  Gemini ({modelo}): limite gratis por minuto, esperando 30 s')
+                        time.sleep(30)
+                        continue
                 if e.code in (400, 404):
                     log(f'  Gemini: modelo {modelo} nao existe mais ({e.code}), tirando da lista')
                     gemini.modelos.remove(modelo)
