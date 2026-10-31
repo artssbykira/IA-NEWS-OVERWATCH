@@ -20,7 +20,7 @@ concurrency:
 jobs:
   rodar:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -36,6 +36,7 @@ jobs:
         run: python noticias.py ${{ inputs.teste && '--postar-ultimo 1' || '' }}
 
       - name: Guardar o que ja foi postado
+        if: always()   # mesmo se a rodada falhar/estourar, salva o que ja saiu (evita repetir no Discord)
         run: |
           git config user.name 'kira-news-bot'
           git config user.email 'kira-news-bot@users.noreply.github.com'

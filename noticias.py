@@ -73,7 +73,7 @@ FONTES = [
 
 COR_DOOMFIST = 0x8E44AD
 MODELOS = [m.strip() for m in os.environ.get('GEMINI_MODELO', '').split(',') if m.strip()] or \
-          ['gemini-flash-latest', 'gemini-2.5-flash', 'gemini-2.0-flash']
+          ['gemini-flash-latest', 'gemini-flash-lite-latest']
 
 
 try:  # o console do Windows nao imprime emoji sem isso
@@ -215,36 +215,63 @@ Texto:
 """
 
 
+def modelos_disponiveis(chave):
+    """Pergunta ao Google quais modelos 'flash' existem hoje (os nomes mudam: 2.0/2.5 foram desligados em out/2026)."""
+    try:
+        d = json.loads(baixar('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', None,
+                              {'x-goog-api-key': chave}, timeout=20))
+    except Exception as e:
+        log(f'  Gemini: nao consegui listar os modelos ({e.__class__.__name__}), usando a lista fixa')
+        return list(MODELOS)
+    nomes = [m['name'].split('/', 1)[1] for m in d.get('models', [])
+             if 'generateContent' in m.get('supportedGenerationMethods', []) and 'flash' in m['name']
+             and not re.search(r'image|tts|audio|live|exp|preview|thinking|8b', m['name'])]
+
+    def ordem(n):
+        num = re.search(r'(\d+(?:\.\d+)?)', n)
+        return (0 if n.endswith('flash-latest') else 2 if 'lite' in n else 1, -float(num.group(1)) if num else 0)
+    nomes.sort(key=ordem)
+    log(f'  Gemini: modelos disponiveis {nomes[:5]}')
+    return nomes or list(MODELOS)
+
+
+PRAZO = {'fim': None}   # a rodada para de chamar a IA depois disso (sobra tempo para salvar o que foi postado)
+
+
 def gemini(prompt):
     chave = os.environ.get('GEMINI_API_KEY', '').strip()
     if not chave:
         return None
+    if not getattr(gemini, 'modelos', None):
+        gemini.modelos = modelos_disponiveis(chave)
     corpo = json.dumps({
         'contents': [{'parts': [{'text': prompt}]}],
         'generationConfig': {'responseMimeType': 'application/json', 'temperature': 0.2},
     }).encode()
-    for modelo in list(MODELOS):
+    for modelo in list(gemini.modelos):
+        if PRAZO['fim'] and time.time() > PRAZO['fim']:
+            return None
         url = f'https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent'
-        for tentativa in range(3):
+        for tentativa in range(2):
             try:
                 resp = json.loads(baixar(url, corpo, {'Content-Type': 'application/json',
-                                                      'x-goog-api-key': chave}, timeout=120))
+                                                      'x-goog-api-key': chave}, timeout=45))
                 texto = resp['candidates'][0]['content']['parts'][0]['text']
                 return json.loads(texto)
             except urllib.error.HTTPError as e:
-                if e.code == 429:
-                    log(f'  Gemini: limite gratis por minuto, esperando 65 s (tentativa {tentativa + 1})')
-                    time.sleep(65)
+                if e.code == 429 and tentativa == 0:
+                    log(f'  Gemini ({modelo}): limite gratis por minuto, esperando 30 s')
+                    time.sleep(30)
                     continue
                 if e.code in (400, 404):
-                    log(f'  Gemini: modelo {modelo} indisponivel ({e.code}), tentando o proximo')
-                    MODELOS.remove(modelo)
-                    break
-                log(f'  Gemini: erro HTTP {e.code}: {e.read()[:200]!r}')
+                    log(f'  Gemini: modelo {modelo} nao existe mais ({e.code}), tirando da lista')
+                    gemini.modelos.remove(modelo)
+                else:
+                    log(f'  Gemini ({modelo}): erro {e.code}, tentando o proximo modelo')
                 break
             except (KeyError, IndexError, json.JSONDecodeError, urllib.error.URLError, TimeoutError) as e:
-                log(f'  Gemini: resposta inesperada ({e.__class__.__name__}), tentando de novo')
-                time.sleep(5)
+                log(f'  Gemini ({modelo}): {e.__class__.__name__}, tentando o proximo modelo')
+                break
     return None
 
 
@@ -392,9 +419,13 @@ def main():
         novos = filtrados
 
     novos.sort(key=lambda i: i['data'])
+    PRAZO['fim'] = time.time() + 8 * 60
     log(f'{len(novos)} item(ns) novo(s) para analisar')
     postados = doom = repetidos = 0
     for item in novos:
+        if time.time() > PRAZO['fim'] + 60:
+            log('Tempo da rodada acabou: o resto fica para a proxima (nada se perde)')
+            break
         log(f'- {item["fonte"]["nome"]}: {item["titulo"][:90]}')
         if not a.postar_ultimo and parecido(item['titulo'], est['recentes']):
             log('  mesma noticia ja postada por outra fonte, pulando')
