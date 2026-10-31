@@ -2,7 +2,7 @@ name: Noticias Overwatch
 
 on:
   schedule:
-    - cron: '17 */3 * * *'   # a cada 3 horas (o GitHub pode atrasar alguns minutos)
+    - cron: '17 */6 * * *'   # a cada 6 horas: a cada 3 h estourava os 2000 min/mes gratis do repo privado (out/2026)
   workflow_dispatch:
     inputs:
       teste:
@@ -20,7 +20,7 @@ concurrency:
 jobs:
   rodar:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
 

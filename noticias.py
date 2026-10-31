@@ -30,6 +30,8 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
+from imagens import achar_imagem
+
 AQUI = os.path.dirname(os.path.abspath(__file__))
 ESTADO = os.path.join(AQUI, 'vistos.json')
 UA = 'Mozilla/5.0 (compatible; KiraNewsBot/1.0; +https://linktr.ee/kira_owbr)'
@@ -120,12 +122,15 @@ def ler_fonte(fonte):
     if raiz.tag == 'rss':
         for it in raiz.iter('item'):
             link = (it.findtext('link') or '').strip()
+            desc = it.findtext('description') or ''
+            img = re.search(r'<img[^>]+src="([^"]+)"', desc)
             itens.append({
                 'id': (it.findtext('guid') or link).strip(),
                 'titulo': (it.findtext('title') or '').strip(),
                 'link': link,
                 'data': data_iso(it.findtext('pubDate')),
-                'texto': limpar_html(it.findtext('description')),
+                'texto': limpar_html(desc),
+                'imagem_feed': html.unescape(img.group(1)) if img else '',
             })
     else:  # Atom (YouTube e Reddit)
         ns = {'a': 'http://www.w3.org/2005/Atom', 'm': 'http://search.yahoo.com/mrss/'}
@@ -141,6 +146,9 @@ def ler_fonte(fonte):
                 'link': link,
                 'data': data_iso(en.findtext('a:published', '', ns) or en.findtext('a:updated', '', ns)),
                 'texto': limpar_html(corpo),
+                'imagem_feed': html.unescape((en.find('m:thumbnail', ns).get('url') if en.find('m:thumbnail', ns) is not None
+                                              else en.find('m:group/m:thumbnail', ns).get('url') if en.find('m:group/m:thumbnail', ns) is not None
+                                              else '')),
             })
     for it in itens:
         it['fonte'] = fonte
@@ -274,11 +282,13 @@ def analisar(item, recentes, usar_ia=True):
 
 # ---------------------------------------------------------------- Discord
 
-def postar(webhook, titulo, link, texto, rodape, cor, data, seco):
+def postar(webhook, titulo, link, texto, rodape, cor, data, seco, imagem=None):
     embed = {
         'title': titulo[:256], 'url': link, 'description': texto[:4000], 'color': cor,
         'footer': {'text': rodape}, 'timestamp': data.isoformat(),
     }
+    if imagem:
+        embed['image'] = {'url': imagem}
     if seco or not webhook:
         log(f'  [seco] {rodape} | {titulo}\n{texto[:600]}\n')
         return True
@@ -399,16 +409,21 @@ def main():
             continue
         ok = True
         postou = False
+        imagem = None
+        if r.get('relevante') or r.get('doomfist'):
+            imagem, link_real = achar_imagem(item)
+            item['link'] = link_real or item['link']
+            log(f'  imagem: {imagem or "nenhuma"}')
         if r.get('relevante'):
             ok = postar(wh_ow, r.get('titulo') or item['titulo'], item['link'], r.get('resumo', ''),
-                        item['fonte']['nome'], item['fonte']['cor'], item['data'], a.seco)
+                        item['fonte']['nome'], item['fonte']['cor'], item['data'], a.seco, imagem)
             postados += ok
             postou = ok
         else:
             log('  nao e noticia, fica fora do #overwatch-news')
         if r.get('doomfist') and (r.get('doomfist_resumo') or '').strip():
             ok_doom = postar(wh_doom, '👊 Doomfist: ' + (r.get('titulo') or item['titulo']), item['link'],
-                             r['doomfist_resumo'], item['fonte']['nome'], COR_DOOMFIST, item['data'], a.seco)
+                             r['doomfist_resumo'], item['fonte']['nome'], COR_DOOMFIST, item['data'], a.seco, imagem)
             ok = ok and ok_doom
             doom += ok_doom
             postou = postou or ok_doom
