@@ -1412,6 +1412,7 @@
   "t3_1xo2i33": "2026-11-04T22:51:34+00:00",
   "CBMixAFBVV95cUxNVE84Wm80VWdBdUV0dDVFNmRESTBDSXM1Y2s1SHBiNy00amV4QlBQdXJZdkNhYTFDV1F3Umo4WGtDY3pnMVlTUDVqdHhaVGd1TkM2bDA3Q2MzOGhXV0xXOTNnWXRObU94YkRjcnVYUklXUWV0ejJwRG9kbHp4aFpvbXEtZGhzOGR5S09lN3A5TTdxTTctRmdEeWZDZlBEOHc1ZFkzU3ZUZzNWSFRpczVSNmxFb1l2M0V5eFB2M3NnU3FtWmhl": "2026-11-04T23:00:57+00:00",
   "t3_1xo4ghh": "2026-11-05T00:17:35+00:00",
+  "CBMirAFBVV95cUxQWmJYY0wxR1BKSVExNjlSS1lnazI1WUhqTW5mUW1SUnp2WGJQZkRPRk1vYnQydHlKSHYzRmpkN0lsdUdnY09wdjFKT0hpaTd2MHB1VUFTM3BqMV9mZTdGX0FGVU1JRU1JY0RBQk5xYTFqb3kwUkwtSWlCOTJCTngxSzBvTEt4RFJHb2h3UndzMGJjUnFyanljUkMtTXZuVEZESk1yV3NQRHZxVFR3": "2026-11-05T00:30:27+00:00",
   "t3_1xo5ebb": "2026-11-05T01:00:59+00:00",
   "t3_1xo63dw": "2026-11-05T01:34:38+00:00",
   "t3_1xo6ctk": "2026-11-05T01:47:49+00:00",
@@ -1462,11 +1463,16 @@
   "t3_1xpdxau": "2026-11-06T14:18:19+00:00",
   "t3_1xpg85k": "2026-11-06T15:53:15+00:00",
   "t3_1xpgwlf": "2026-11-06T16:19:50+00:00",
+  "yt:video:_qxKnLplbek": "2026-11-06T17:45:30+00:00",
   "t3_1xpk3nx": "2026-11-06T18:22:27+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mzo6awzdxk2z": "2026-11-06T19:59:00+00:00",
+  "yt:video:a0t2zHOCVfI": "2026-11-06T20:06:07+00:00",
+  "t3_1xpooor": "2026-11-06T21:27:26+00:00",
+  "yt:video:fovr3TiAuGk": "2026-11-06T22:15:30+00:00",
   "t3_1xprhgj": "2026-11-06T23:29:23+00:00",
   "t3_1xps3sx": "2026-11-06T23:59:26+00:00",
-  "t3_1xpsd3g": "2026-11-07T00:10:03+00:00"
+  "t3_1xpsd3g": "2026-11-07T00:10:03+00:00",
+  "CBMigwFBVV95cUxNX3AzbHZsLVZSU2ZuaGZjR3Axa2ZfV3d4SUpjUDRDenZMQXlucEwwNDdGZ1JoaWR0MV9zclI5cm9tdkxmSUxaR2JYcVB3dDNEM1poaW4tZzhVZld6Z21URzRVMEFPTDJlaTVIdEktbjBwX2JPaWJFYWktR2JPUHJvaW9zUQ": "2026-11-07T05:49:49+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1479,11 +1485,6 @@
   "youtube"
  ],
  "recentes": [
-  {
-   "titulo": "Notas de atualização de Overwatch são divulgadas pela IGN",
-   "titulo_original": "Overwatch October 20 2026 Patch Notes - IGN",
-   "data": "2026-10-21T11:33:25+00:00"
-  },
   {
    "titulo": "New #Overwatch Kiriko Statue 🦊",
    "titulo_original": "New #Overwatch Kiriko Statue 🦊",
@@ -1778,6 +1779,11 @@
    "titulo": "Doomfist vs Vendetta: Overwatch’s 24-Tier Taking Reign Finale Is Live - DANAMIC",
    "titulo_original": "Doomfist vs Vendetta: Overwatch’s 24-Tier Taking Reign Finale Is Live - DANAMIC",
    "data": "2026-11-06T13:59:05+00:00"
+  },
+  {
+   "titulo": "New attractions coming soon… 🏴‍☠️🦑🛸😈",
+   "titulo_original": "New attractions coming soon… 🏴‍☠️🦑🛸😈",
+   "data": "2026-11-06T22:15:30+00:00"
   }
  ]
 }
