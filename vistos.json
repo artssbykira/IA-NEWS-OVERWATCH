@@ -1480,11 +1480,16 @@
   "t3_1xq2zal": "2026-11-07T10:08:46+00:00",
   "t3_1xq3t1t": "2026-11-07T11:02:50+00:00",
   "t3_1xq51m4": "2026-11-07T12:18:20+00:00",
+  "t3_1xq5avx": "2026-11-07T12:32:54+00:00",
   "t3_1xq83wx": "2026-11-07T14:49:04+00:00",
   "t3_1xq8ysm": "2026-11-07T15:26:23+00:00",
+  "t3_1xqb8a0": "2026-11-07T17:02:19+00:00",
   "CBMipAFBVV95cUxORlFXQW1QczZPajZ3YUhHRXdGRjBvTTVnUzlBSjRodjlRY2VhSGliWWFTSlZKMV95VUM4emMwV3BvbGlZUVdBQmFLZDRYLUtNWlltUlQzMlF1OC14M2p5d1M4bWYtUzY1VnFSZ0VBU194NzVSdExQZ2FRVjZfRjd0TEVIMXJSTkRzcDdBaDRHMjQwY1RzX2FGTUdMc0FUZFd0U0U2Xw": "2026-11-07T17:09:32+00:00",
   "t3_1xqcaen": "2026-11-07T17:46:47+00:00",
-  "CBMijgFBVV95cUxNWmx4Nm1sSzZsNWpfRVRsOWJYYlZiRUp6T1dMd1pRSVJ4N2k4QVkxeWdfUGJfTlh4ckZwcTFldmoySmlEcllJdlZCRzRUeXlSYjhxV3lIY3RVanlTT1R1aERiTFVPdlZpLTJSRVJLMXV3MEwxOWZjX0lZZ2xUSVhqUi1kMUFCOTM1czZNeFBR": "2026-11-07T18:45:16+00:00"
+  "CBMijgFBVV95cUxNWmx4Nm1sSzZsNWpfRVRsOWJYYlZiRUp6T1dMd1pRSVJ4N2k4QVkxeWdfUGJfTlh4ckZwcTFldmoySmlEcllJdlZCRzRUeXlSYjhxV3lIY3RVanlTT1R1aERiTFVPdlZpLTJSRVJLMXV3MEwxOWZjX0lZZ2xUSVhqUi1kMUFCOTM1czZNeFBR": "2026-11-07T18:45:16+00:00",
+  "t3_1xqdr88": "2026-11-07T18:48:20+00:00",
+  "t3_1xqglep": "2026-11-07T20:51:12+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mzqvlqesqs2l": "2026-11-07T22:02:00+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1497,11 +1502,6 @@
   "youtube"
  ],
  "recentes": [
-  {
-   "titulo": "OWCS Coreia: SEIJI ESPORTS enfrenta Poker Face no Stage 3",
-   "titulo_original": "OCS Korea Stage 3 2026: SEIJI ESPORTS vs. Poker Face - Robinhood",
-   "data": "2026-10-21T09:20:42+00:00"
-  },
   {
    "titulo": "Hey Cassidy, you know they can see you right? 🫠",
    "titulo_original": "Hey Cassidy, you know they can see you right? 🫠",
@@ -1796,6 +1796,11 @@
    "titulo": "OWCS 2026 NA Stage 3: Calendário e Resultados",
    "titulo_original": "Overwatch Champions Series 2026 - NA Stage 3 - OW - Schedule and Results - Esports Charts",
    "data": "2026-11-07T04:06:45+00:00"
+  },
+  {
+   "titulo": "Doctrine Perk Removed in #Overwatch 🦇",
+   "titulo_original": "Doctrine Perk Removed in #Overwatch 🦇",
+   "data": "2026-11-07T22:02:00+00:00"
   }
  ]
 }
