@@ -1515,11 +1515,21 @@
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3mztdtxp2522g": "2026-11-08T21:23:00+00:00",
   "t3_1xraixu": "2026-11-08T22:06:30+00:00",
   "t3_1xrbj9r": "2026-11-08T22:51:45+00:00",
+  "t3_1xrbp78": "2026-11-08T22:59:18+00:00",
   "CBMihwFBVV95cUxNbHl0dzZWWWg2c1I0a1YxdFRYb2NJTnp6OXozMGRtTGU0MWtZbDRpRlV3UTExekpxdk41ZnRFNlpTMFJsWjVESU81ZVBBd2tteVNib3hhZkpvZ19MMVF4VDNwem5CRXlGcmJwZHNBZmFUaU55dS1fSDNCTzVuWVBnTnhWSzJ5cW8": "2026-11-09T00:56:55+00:00",
+  "t3_1xrg44p": "2026-11-09T02:32:42+00:00",
   "CBMimAFBVV95cUxQS09BYkM4N2RDeFZsN05IcjlUMEFHeHRWSXhFOF9KYXNWQk1oRHN5dms1MkFXd0d4T205THIzY2NYaEhaMXpZbDRmQ1RINlM4VEFfcjlIYnFFZUl2YzNlanVGQ1dWcGlxbmFhRWdrekVzV2tvQnROaGc5RURLa09QT3pfVGVQSC1fOTctLUs1LWczWWNDcE1CTw": "2026-11-09T02:45:36+00:00",
   "CBMi2AFBVV95cUxQdTZrRFpPLXNnRFNXTkNwSzBBYWRaN2lBQUZLWm5aUU5DcVhTYzZuMW1DRm10YXBlZ1BMcVB6ZXN3bVhBVW03UEk3cUN1NFJCeXh2WWxvWDJ1amM1ZUpSQUtmd1NER1N4UFZSYTBxQ21hdXRZU3ZTbzNxLXZrdFU4aGZtTGZTTUVHMkl6UVoyeEV1TkhaTm85ejl5WUNhVG94SFFSWGRWcVRkdS1oMVpBR2VwZ0ZEOVNwVGpEYVEwV0Z6a2tZRDQySGxDZDlSLWY0TjBPV0xTTXg": "2026-11-09T02:58:12+00:00",
   "CBMihgFBVV95cUxPSkZVUkN0U1N1THlaOHRvR2w1YkQ0a2JKOWtRRVdlRnFubHFSMk16czFtNWIweEtkSU4ydHR5Y2NnZzhoUGdIbV9hTDZpcW04cGZuLWtwa0hDRmhsWmpXck1kOElHSDR6T2lMcmRZdVIzS3Jqa1dTdHpfdlZvaHBQX0NEVzd1Zw": "2026-11-09T03:40:55+00:00",
-  "t3_1xrj1o7": "2026-11-09T05:07:53+00:00"
+  "t3_1xrj1o7": "2026-11-09T05:07:53+00:00",
+  "t3_1xrmh2h": "2026-11-09T08:34:12+00:00",
+  "t3_1xrms6z": "2026-11-09T08:55:05+00:00",
+  "t3_1xrmx9k": "2026-11-09T09:03:46+00:00",
+  "t3_1xrxs2z": "2026-11-09T17:24:57+00:00",
+  "yt:video:tJ0II19DitA": "2026-11-09T19:00:31+00:00",
+  "t3_1xs2mfy": "2026-11-09T20:22:42+00:00",
+  "t3_1xs2ud9": "2026-11-09T20:31:11+00:00",
+  "CBMiiAFBVV95cUxOQ1c5ZFdoc2NBV2k1LU1vZmtvMFBtaEpCdHQtaDFsa20xZlZuLXgzbWp1TTREQXJyUzZTcWt0M1VNQzFuSWdQTDJMLTM2VHRRSU5EcjhkLVhkRm4xLXFmRFdPTG5TQzlzVWpoM3NkSHZ2aDdGVURfbVUzZ0ZPdXFxTFBIaUlhWGl1": "2026-11-09T20:56:53+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1532,11 +1542,6 @@
   "youtube"
  ],
  "recentes": [
-  {
-   "titulo": "Fracture Story Time with Carolina Ravassa | Overwatch",
-   "titulo_original": "Fracture Story Time with Carolina Ravassa | Overwatch",
-   "data": "2026-10-22T18:00:27+00:00"
-  },
   {
    "titulo": "New #Overwatch Comic: Fracture 🌌",
    "titulo_original": "New #Overwatch Comic: Fracture 🌌",
@@ -1831,6 +1836,11 @@
    "titulo": "Happy Birthday to Emre, the corrupted soldier in #Overwatch 💥",
    "titulo_original": "Happy Birthday to Emre, the corrupted soldier in #Overwatch 💥",
    "data": "2026-11-08T21:23:00+00:00"
+  },
+  {
+   "titulo": "Why does this always happen to us? 💥",
+   "titulo_original": "Why does this always happen to us? 💥",
+   "data": "2026-11-09T19:00:31+00:00"
   }
  ]
 }
