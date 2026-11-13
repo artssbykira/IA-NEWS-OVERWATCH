@@ -1594,6 +1594,7 @@
   "t3_1xtkqix": "2026-11-11T15:31:50+00:00",
   "t3_1xtllm1": "2026-11-11T16:04:42+00:00",
   "t3_1xtlyrx": "2026-11-11T16:18:14+00:00",
+  "CBMiuwFBVV95cUxOd1V0TXBlY0V6eC1lWHV4UDR5MHZwNjMxZ1EteDdkTzduV3R5Mk9NdnhaRF93U01KZWFlZ2VCNThOYjJCVlRmeDFkRHlTZFJPYUNuMUVPU1hIUFpKRHBBSXRJeDZIdE92MWpkTi1fZTBXaVdkTU5ESGVFQ1FkOXBWWXdaMnlZWGgzQUdPTGplckI5UXJGd0N1YXJ3MHlyR0pUaWV2dE9vM1hXMGtHdXlSNnU3dEtkWnU0T2hB0gHAAUFVX3lxTE8wYUlxaG83VEphcXpKNFFWQVp2cmI5UHJoQUlNNTdfdklfREgyNVBTX1FnNm03bGlleGNXTjNEeC1yZ01TRzVvTXc5ZUJ2dkEtQm1Sa0NUaTJjeVFHam9RVndwLXlJT3RpWFVWT0NiSm5VbjFTazI2Q0dDb21sdlhkMW5vMWtxWU1ZdXNjcld0dnJBNW1lR0Qtb3dqSFZCa3ZJbWV4b1c0SFVaeDFRWjVjNGtwdDBwektlT1VnNU9Ldw": "2026-11-11T17:15:00+00:00",
   "CBMixgFBVV95cUxNUl84aTZoWW5QcktiMmpnbGFHU1I1bS01TW5VNEhFd1c4SEVoclBRRG5Md0EtWDhwRFhBNFJFZkJtNGljTWZkZG83eXIyLTkySGdLRUJrVHZ2V2cwaEJnbWpmLURlSThtYUw5R3dvTGkwSlg0Z1RDME1MSk1ScHFWR0I1ZGVZWllxX0VaWmFaMnJtWkh5Z195OUZYbWVXczdLcG1rLTRRSTBveTNPU2diMWNha2VMOXlMR2t6N0VxamdJVGFGenc": "2026-11-11T17:24:12+00:00",
   "CBMifkFVX3lxTFA5MWlwYWVEWHhJOFpuZEx1aW9FMW8zdkFGbnBIVk02bjlValNjQUJCM09zb0cwNTNHRVJmZm9CTzFUTFRWTGZULWN5czhOWDhQM3VLNHB6MHluYV82QzdPZGUtMVBsTU5YT241Z1YteVFpRnNuYVlmMnB1UE1zQQ": "2026-11-11T17:45:05+00:00",
   "CBMikgFBVV95cUxOc1BCSlpseVdqYXpkcWpNOG5LX3lBeVFFdmM3Tm9VbW1oNndlOHBYRmhDYmRFUGZoLTlLN1lnWkRYVHBBQ1pXX0RkNEQ0MXNLVGhfZEFYWkNZS1JDZk1kcXpsWW5TdUZONnFjWWVseDlmd3dkNVNHdDRMaWkxOFFHaHlZT3FSN3FGQkxxcXEzeTNOdw": "2026-11-11T20:47:50+00:00",
@@ -1609,11 +1610,32 @@
   "CBMipwFBVV95cUxQZlg4bmtqckJnQXp1NnVPbVJHWTlPSTRiTENPZGctVWozYnY1QjdJRGJnR1ZYY0ZxZzJTMzE3S2RkblR3aFZnWHFjeDhlWUFGSUtZWDdsSG5qSEVSNVN6cnZRMEtYbnFQWXNLV1pYSUY2cFpXTDdaMkhCdzdCQi1hbFcxRHNBVnd2RXgzU1JfdzZ1cHd4NkVGUzlUZWJqcDZScFhZWS1vdw": "2026-11-12T12:01:05+00:00",
   "t3_1xubylo": "2026-11-12T12:51:31+00:00",
   "t3_1xuc2sy": "2026-11-12T12:57:29+00:00",
+  "t3_1xucdwq": "2026-11-12T13:11:02+00:00",
   "CBMikAFBVV95cUxQUVhjUmdKRS11NF95Q2l3a3NFNnRUNldJVEpkQllHZ0phak4tMVFOcHdZdDdhSjQyVHl2dzdZMElKTlRwbHB2cnVSSVpOSk10bW5GSXd6UzV1S2NoUl9lWXhtdEZ3Wmh3N0xrNnVaWWdMcWk0S0J3NmdnQTRrbDBHVFFzdDVodzNsY0hBYUhNWWo": "2026-11-12T15:00:53+00:00",
   "t3_1xugmhm": "2026-11-12T16:03:37+00:00",
+  "CBMikAFBVV95cUxNUUR1aDZ0QWRRRXFHRE5jaUNuV0ZaZUIxVF8xSmFZSkYxLWFpdS1aOU8yN0FUNmRsNmZucnVzNHZ4TlZiaGZhREhkQl9vbG1Gbm5rLTcybUVCYkZiWHFkLW92aHJVZ053b0NlM3JGVTlqYXVGZEtHb2c5YjJ2a0Y4NDNtaTVrdjNjVG9qZFg5QS0": "2026-11-12T16:50:00+00:00",
+  "CBMisAFBVV95cUxNSmdXaEJGZE9zQzExVDlSQUhkNE1zcGctRWRScVJ0THZOZThGT3Awbll1YnJpMUN1VzRkZTFiak5lR1RBcnRoLWZULW40aHFIUDFzQnJMVXB4aUxoeVp1cld0YWlicVVoeWFTcDhvU0RVcVZST040dFJxSVpCcHl4Q3BRZEs5V1V6R2RVNWdBa1V2VE92VGdtRDFjV09XVnQ4V2NPSGN6Y3dPOWppVDN4SA": "2026-11-12T17:05:16+00:00",
   "t3_1xuihea": "2026-11-12T17:12:35+00:00",
   "t3_1xulq2v": "2026-11-12T19:11:43+00:00",
-  "CBMivAFBVV95cUxNM0hEamYwVU9ZaWlKNy1MSUVWR2FEaTBRWWNKQnlwbWhEMmZNNXJhTzVNclN4LVpxc1JhQVlJV21TYm9od2t0RmtfTnkxSjNGMlhTYnFQb3JPRzJLYkhyUmlMeXQ4U3RWYzU4VWRsNklGbDV3amhVVEY4aVI0QUZndFFnRzVMLXE0T1J5TGlqejljUVd6TnpKcExQbHFTZURDYkZIYnJXVnF0enluYlQ2Z1d4b3BjUGJyVXllcg": "2026-11-12T19:21:02+00:00"
+  "CBMivAFBVV95cUxNM0hEamYwVU9ZaWlKNy1MSUVWR2FEaTBRWWNKQnlwbWhEMmZNNXJhTzVNclN4LVpxc1JhQVlJV21TYm9od2t0RmtfTnkxSjNGMlhTYnFQb3JPRzJLYkhyUmlMeXQ4U3RWYzU4VWRsNklGbDV3amhVVEY4aVI0QUZndFFnRzVMLXE0T1J5TGlqejljUVd6TnpKcExQbHFTZURDYkZIYnJXVnF0enluYlQ2Z1d4b3BjUGJyVXllcg": "2026-11-12T19:21:02+00:00",
+  "CBMizAFBVV95cUxPdHRpeFlyUHlpU0JfV2hOUVJlcVRjTVBwazdiVFV4eGxudWNxelh2UXJsOVJXVjlxYnFzRWcxeFE1VDFmVTd3Z2ZUcGFlclZXRWUydWEyMkVOdzNYUWhKMFZVWnUxaW5ZbEUtWkpkaTlJZnd4a2NoN1RieG1vNE50Y1hsUzRrbjVPeVJYbHUwNGktc0gxa0dlN3loOTJiOWl6TWtLeUxRdERLU2Z1cWUtbFZhc2VoUFpSTVJULVc5TDdfODk4bU94SXhmQ2I": "2026-11-12T19:50:11+00:00",
+  "CBMiuwFBVV95cUxOS2Z6LUg1RDQ4M0lsdE9vbGVUM3BIRGRBbmtDOXpFTHNLVE96bVhlTFB3TVk0YlI4ZDBfUkV4enBEenc5MTJWOGJMTDd6eFM0bGVadVhZWnJnNldTTTFQZC0zREliTGlHYzFybXF3WVY0amdiVVlCbnJXWUdvR2ZVU1hsblFkWk5WUjBKWFBwbXZXTzJBRjRvUmlidHFfQ0xGbEl6WlJ5WFhoaHpNZ0R3VHpoSU1xR0pjbEhZ": "2026-11-12T21:12:52+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n25j7qorfc2z": "2026-11-12T22:25:00+00:00",
+  "t3_1xuqpq9": "2026-11-12T22:26:05+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n25jcmslhs2z": "2026-11-12T22:27:00+00:00",
+  "t3_1xur4i0": "2026-11-12T22:43:25+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n25knjynxc2u": "2026-11-12T22:51:00+00:00",
+  "CBMinAFBVV95cUxOUG45MXBKRHlKLUNfU1lUX216NzVDaE80WTFldlpJTXBPSDBIU2t1RE5HMmFEV0RxWkV3a2ZncE0tcTNpdDllTlJXWk5GVlAxSURlVE1ORFBMdU8zTkpyVFh1MGd2YkxXTHJPNHF4eEhPTjh3alhQd1FfMlNyVWdnc0M5WFIyM2k3YjZNVHNWZUluTGdlak1tWG56WGE": "2026-11-12T23:07:13+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n25lu2krg22t": "2026-11-12T23:13:00+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n25lwi23ck2t": "2026-11-12T23:14:00+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n25m3brfbk2o": "2026-11-12T23:17:00+00:00",
+  "t3_1xurzjr": "2026-11-12T23:21:08+00:00",
+  "t3_1xusg6q": "2026-11-12T23:41:51+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n25preiobc2p": "2026-11-13T00:23:00+00:00",
+  "t3_1xutlcd": "2026-11-13T00:32:18+00:00",
+  "CBMipgFBVV95cUxPeDVhd0w0SFNGcGhrNkZrTEliVkhWR0Z3WXJockxXYmRuYW00TFJfelpaODZVYXFMdmZyNmhYVTRkOEl0N3N3dllLT3JxaF9iZVR1cFZkNi1aZGkxb1NUY0NZU1RiaUdub2RzTnZaNnhlYnR4TGVWSnhHZ0NhWXY3VEJRMERxbmhFNVA4Mk1CTk9VcVRDd0ItbnhUZmJyNFRHM2FPS0Fn": "2026-11-13T02:23:31+00:00",
+  "CBMixAFBVV95cUxOS0Nla0ZMa2U5Z0wxa3FxZ0FvRXRYRUVEbkJmanlySnlPb21KTGcxYWJjZC16czIzMXphMDBjTngtRi1LUVY0bGdLODJDTFBfeDhJNlJ4QmI1VW1MNEg1RW9WdjVIbmpIYTg0SVVISlQ4MU9uUThrWnJiNTZTWlMwcnZMRGVvd29FTzN1WGp2UXM4SDFPNXBESTUweVk3ZVRYcU5DMTJXdXFadDk5a3pUSWh0V1cxck1NUXowSjZQUGprbnc5": "2026-11-13T03:56:31+00:00",
+  "CBMid0FVX3lxTE14SVEwdElFOS1NN1dJVUgyM3VBbzl6X3prOWZaQTNPemNHQWp0ZUtqRkJud29XOVhCSTBBM2hWVHg3M1hJZmszVVhXdmxBUW11TWlVLTFONFkxWnJETGpnSUUwSXY4Q0gtVGFmeWkwWk1tX3JHdm1v": "2026-11-13T04:04:36+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1626,41 +1648,6 @@
   "youtube"
  ],
  "recentes": [
-  {
-   "titulo": "New #Overwatch Key Art 🎨",
-   "titulo_original": "New #Overwatch Key Art 🎨",
-   "data": "2026-10-29T17:29:00+00:00"
-  },
-  {
-   "titulo": "New #Overwatch Cinematic: In the Wolf's Mouth 🐺",
-   "titulo_original": "New #Overwatch Cinematic: In the Wolf's Mouth 🐺",
-   "data": "2026-10-29T17:13:00+00:00"
-  },
-  {
-   "titulo": "New #OWCS Viewership Rewards ✨",
-   "titulo_original": "New #OWCS Viewership Rewards ✨",
-   "data": "2026-10-28T20:03:00+00:00"
-  },
-  {
-   "titulo": "Overwatch: Doomfist derrota Vendetta em novo curta animado - einerd.com",
-   "titulo_original": "Overwatch: Doomfist derrota Vendetta em novo curta animado - einerd.com",
-   "data": "2026-10-29T23:45:00+00:00"
-  },
-  {
-   "titulo": "Slander aside, I quite liked this moment between Vendetta and Doomfist",
-   "titulo_original": "Slander aside, I quite liked this moment between Vendetta and Doomfist",
-   "data": "2026-10-30T02:14:47+00:00"
-  },
-  {
-   "titulo": "i think the comunity is full of larpers",
-   "titulo_original": "i think the comunity is full of larpers",
-   "data": "2026-10-30T16:42:19+00:00"
-  },
-  {
-   "titulo": "Watch Dokiwatch Episode 2 now 💖",
-   "titulo_original": "Watch Dokiwatch Episode 2 now 💖",
-   "data": "2026-10-30T19:00:58+00:00"
-  },
   {
    "titulo": "New #Overwatch Story Arc Teased 🔎",
    "titulo_original": "New #Overwatch Story Arc Teased 🔎",
@@ -1925,6 +1912,41 @@
    "titulo": "Sombra é apresentada como nova personagem de Overwatch",
    "titulo_original": "Meet Sombra, the Newest Overwatch Character - www.well-played.com.au",
    "data": "2026-11-11T03:32:56+00:00"
+  },
+  {
+   "titulo": "New #Overwatch Hero Details Revealed 🔎",
+   "titulo_original": "New #Overwatch Hero Details Revealed 🔎",
+   "data": "2026-11-12T22:25:00+00:00"
+  },
+  {
+   "titulo": "New 6v6 Balance Patch in #Overwatch 📋",
+   "titulo_original": "New 6v6 Balance Patch in #Overwatch 📋",
+   "data": "2026-11-12T22:27:00+00:00"
+  },
+  {
+   "titulo": "New Perk Updates in #Overwatch ✨",
+   "titulo_original": "New Perk Updates in #Overwatch ✨",
+   "data": "2026-11-12T22:51:00+00:00"
+  },
+  {
+   "titulo": "Wrecking Ball Update in #Overwatch 🐹",
+   "titulo_original": "Wrecking Ball Update in #Overwatch 🐹",
+   "data": "2026-11-12T23:13:00+00:00"
+  },
+  {
+   "titulo": "Lifeweaver Rework paused in #Overwatch 🪷",
+   "titulo_original": "Lifeweaver Rework paused in #Overwatch 🪷",
+   "data": "2026-11-12T23:14:00+00:00"
+  },
+  {
+   "titulo": "Potential Mauga Rework Teased in #Overwatch 💥",
+   "titulo_original": "Potential Mauga Rework Teased in #Overwatch 💥",
+   "data": "2026-11-12T23:17:00+00:00"
+  },
+  {
+   "titulo": "Potential Kiriko Skin in #Fortnite 🦊",
+   "titulo_original": "Potential Kiriko Skin in #Fortnite 🦊",
+   "data": "2026-11-13T00:23:00+00:00"
   }
  ]
 }
