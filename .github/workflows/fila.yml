@@ -1,0 +1,34 @@
+name: Fila de analise (Discord)
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # o GitHub roda a cada 5 a 15 min (atrasa quando está cheio)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: 'rodar | simular (nao escreve nada) | diagnostico | montar'
+        type: choice
+        options: [rodar, simular, diagnostico, montar]
+        default: rodar
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fila-analise
+  cancel-in-progress: false
+
+jobs:
+  fila:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: fila
+
+      - name: Fila de analise
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          MODO: ${{ inputs.modo || 'rodar' }}
+        run: python3 fila/main.py
