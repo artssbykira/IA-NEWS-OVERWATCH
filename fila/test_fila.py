@@ -472,6 +472,6 @@ class TestMontar(unittest.TestCase):
     def test_sem_cargos_nao_monta(self):
         import setup
         c = self.cfg()
-        c["roles"] = {"aluno": [], "duo": [], "moderador": ""}
+        c["roles"] = {"aluno": [], "duo": [], "moderador": ""}; c["criar_cargo_duo"] = False
         with self.assertRaises(SystemExit):
             setup.montar(FakeSetup(), c, log=lambda *_: None)

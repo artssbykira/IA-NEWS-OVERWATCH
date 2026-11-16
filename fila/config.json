@@ -2,11 +2,35 @@
   "guild_id": "1365461838594314380",
   "fuso_horas": -3,
   "lista_quinta_hora": 17,
-  "cota": {"aluno": 1, "duo": 2, "staff": 99},
+  "cota": {
+    "aluno": 1,
+    "duo": 2,
+    "staff": 99
+  },
   "duo_por_etiqueta": false,
   "categoria_publica": "INFORMA",
   "rss_patch": "https://us.forums.blizzard.com/en/overwatch/c/announcements/5.rss",
-  "roles": {"aluno": [], "duo": [], "moderador": ""},
-  "canais": {"forum": "", "membros": "", "duo": "", "manual": "", "fila": "", "painel": "", "publico": ""},
-  "tags": {"fila": "", "duo": "", "feito": "", "codigo": "", "livepix": "", "fora": ""}
+  "roles": {
+    "aluno": [],
+    "duo": [],
+    "moderador": ""
+  },
+  "canais": {
+    "forum": "",
+    "membros": "",
+    "duo": "",
+    "manual": "",
+    "fila": "",
+    "painel": "",
+    "publico": ""
+  },
+  "tags": {
+    "fila": "",
+    "duo": "",
+    "feito": "",
+    "codigo": "",
+    "livepix": "",
+    "fora": ""
+  },
+  "criar_cargo_duo": true
 }

@@ -91,6 +91,16 @@ def montar(api, cfg, log=print):
     canais = api.channels(g)
     aluno = list(cfg["roles"].get("aluno") or [])
     duo = list(cfg["roles"].get("duo") or [])
+    if not aluno:  # cargo que a integração do YouTube cria (um só para todos os níveis)
+        achado = next((r for r in roles if r["name"] == "YouTube Member" or
+                       ("integration_id" in (r.get("tags") or {}) and "youtube" in r["name"].lower())), None)
+        if achado:
+            aluno = [achado["id"]]
+    if not duo and cfg.get("criar_cargo_duo"):  # a integração não separa níveis: o Duo é um cargo dado à mão
+        achado = next((r for r in roles if r["name"].strip().lower() == "duo meteoro"), None)
+        duo = [achado["id"] if achado else
+               api.create_role(g, name="Duo Meteoro", permissions="0", mentionable=True, hoist=False, color=0xFF6A18)["id"]]
+    cfg["roles"]["aluno"], cfg["roles"]["duo"] = aluno, duo
     if not aluno and not duo:
         raise SystemExit("Preencha roles.aluno / roles.duo no config.json (veja o diagnóstico) antes de montar.")
 
