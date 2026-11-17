@@ -192,10 +192,9 @@ def montar(api, cfg, log=print):
     alvo = (cfg.get("categoria_publica") or "INFORMA").lower()
     cat_info = next((c for c in canais if c["type"] == 4 and alvo in c["name"].lower()), None)
     if cat_info:
-        # copia as regras da categoria (só leitura pra galera) e libera o robô pra postar
-        ow_pub = [ow(o["id"], o["type"], int(o["allow"]), int(o["deny"]))
-                  for o in cat_info.get("permission_overwrites") or [] if o["id"] != robo]
-        ow_pub.append(ow(robo, 1, VIEW | SEND | EMBED | HISTORY | ADD_REACTIONS | PIN))
+        # só leitura pra galera; o robô posta (a categoria precisa deixar o robô enviar mensagens)
+        ow_pub = [ow(todos, 0, VIEW | HISTORY | ADD_REACTIONS, SEND | SEND_IN_THREADS),
+                  ow(robo, 1, VIEW | SEND | EMBED | HISTORY | ADD_REACTIONS | PIN)]
         publico = garantir("publico", 0, cat_info["id"], permission_overwrites=ow_pub,
                            topic="Como pedir análise do seu replay.")
     else:
