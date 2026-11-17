@@ -43,6 +43,12 @@ def cifrar(chave_publica_b64, texto):
     return base64.b64encode(caixa.encrypt(texto.encode())).decode()
 
 
+def registrar(texto):  # só o resultado, nunca o token
+    import datetime, os
+    with open(os.path.join(os.environ.get("TEMP", "."), "salvar_token_robo.log"), "a", encoding="utf-8") as f:
+        f.write(f"{datetime.datetime.now():%d/%m %H:%M:%S} {texto}" + "\n")
+
+
 def main(testar=False):
     gh = login_github()
     if not gh:
@@ -53,16 +59,24 @@ def main(testar=False):
         cifrar(chave["key"], "teste")
         print("Teste ok: login do GitHub e chave do repositório funcionando (nada foi salvo).")
         return 0
-    token = getpass.getpass("Cole o token do robô (não aparece na tela) e aperte Enter: ").strip()
+    if "--colar" in sys.argv:
+        token = getpass.getpass("Cole o token do robô (não aparece na tela) e aperte Enter: ").strip()
+    else:  # lê da área de transferência (depois de clicar em "Copiar" no portal) e limpa ela
+        token = subprocess.run(["powershell", "-NoProfile", "-Command", "Get-Clipboard -Raw"],
+                               capture_output=True, text=True).stdout.strip()
     if len(token) < 50 or token.count(".") != 2:
-        print("Isso não parece um token de robô do Discord (são 3 partes separadas por ponto). Nada foi salvo.")
+        registrar(f"recusado: copiado tem {len(token)} caracteres e {token.count('.') + 1} partes")
+        print("O que está copiado não é um token do robô. Clique em \"Copiar\" no portal do Discord e rode de novo.")
         return 1
     try:
         api("PUT", f"/repos/{REPO}/actions/secrets/{NOME}", gh,
             {"encrypted_value": cifrar(chave["key"], token), "key_id": chave["key_id"]})
     except urllib.error.HTTPError as e:
+        registrar(f"GitHub recusou: {e.code}")
         print(f"O GitHub recusou ({e.code}). Nada foi salvo.")
         return 1
+    subprocess.run(["powershell", "-NoProfile", "-Command", "Set-Clipboard -Value ' '"], capture_output=True)
+    registrar("salvo")
     print(f"Pronto: o segredo {NOME} está salvo no GitHub. Pode fechar esta janela.")
     return 0
 
