@@ -11,9 +11,14 @@
   "categoria_publica": "INFORMA",
   "rss_patch": "https://us.forums.blizzard.com/en/overwatch/c/announcements/5.rss",
   "roles": {
-    "aluno": [],
-    "duo": [],
-    "moderador": ""
+    "aluno": [
+      "1572007734524514446",
+      "1572007734524514445"
+    ],
+    "duo": [
+      "1572007734524514447"
+    ],
+    "moderador": "1537509610863206450"
   },
   "canais": {
     "forum": "",
@@ -32,5 +37,5 @@
     "livepix": "",
     "fora": ""
   },
-  "criar_cargo_duo": true
+  "criar_cargo_duo": false
 }
