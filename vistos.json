@@ -1807,7 +1807,10 @@
   "CBMitwFBVV95cUxNdkZPMzlBbGpfbS1rNFh2Wk5pcEJzSzVOZl9LU2JqY1lNa2RBWWU1aVg2VUo1RV9OZVZfdXM1NFNlTTFqM2RvOTFXd3NrVkd3QXA0OC04dVdhZ2JzR081ak4xUjBEaVJJdDAxTFZqTU1GM3lvTUQ2cmRjRjFNQTlWWmhOR2VJZ3VIaXJ2UFd6a3FCRWN2ZGRCbXRmV2ZTQ2Fkd1VuU3VWR0NxbTFTUkpfSGY3akRERDg": "2026-11-20T14:14:43+00:00",
   "CBMif0FVX3lxTE1JVU90MzlDWEd2OGZ2dUxtZlN6NHlIOERfaGVhaHkwaXZVcUJhRXJNejlfYTZZYkZzZFM0QzBNVEh1Zm5wd0RQX1RoWGt4bm5Ha2xFVlRuOUdQTWdWZzZWVzNyNjZONUM0c0dsOU1jaExoSHUtVGRhVjByUTRfZlk": "2026-11-20T15:00:00+00:00",
   "CBMif0FVX3lxTE1uT1c0bTVlX2tvWENDN3hab1hoTHdhUXJLcjlYUGppYlRqam9BWmUxMEpWVjBXZVAwUG5ndFpSM0F4UllSaFJ1OEVKb2RGQlpvVVlxZEoxb1MxSjM3OU1iTjVRd1BYTTZ3bUt5VTBtZU1pZnBfNTNMVElmakt5OEU": "2026-11-20T18:00:00+00:00",
-  "CBMihgFBVV95cUxORFkxUUZKUGE0VEJEQ0lJN2lGUDBITTB5enVMSGdLSi1SM2M0YWRhczNDYWlZTks1ZDJxa1IzN0RWSlJITDJkS1U2QWdLYVBiTG5SVElOZjk3N0V6YlQ3NGE1UWxRbmRneEpKWjBNbmdvNDFrVGptU3hZSVNNaXNsVDJpZkd4QQ": "2026-11-20T18:18:59+00:00"
+  "CBMihgFBVV95cUxORFkxUUZKUGE0VEJEQ0lJN2lGUDBITTB5enVMSGdLSi1SM2M0YWRhczNDYWlZTks1ZDJxa1IzN0RWSlJITDJkS1U2QWdLYVBiTG5SVElOZjk3N0V6YlQ3NGE1UWxRbmRneEpKWjBNbmdvNDFrVGptU3hZSVNNaXNsVDJpZkd4QQ": "2026-11-20T18:18:59+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2rg5nteks2u": "2026-11-20T20:24:00+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2rl2dtxzs2l": "2026-11-20T21:51:00+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2rkzgsnqs2l": "2026-11-20T21:51:00+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1820,11 +1823,6 @@
   "youtube"
  ],
  "recentes": [
-  {
-   "titulo": "New Blizzard World Map Change in #Overwatch 🎢",
-   "titulo_original": "New Blizzard World Map Change in #Overwatch 🎢",
-   "data": "2026-11-03T22:26:00+00:00"
-  },
   {
    "titulo": "New #Overwatch Mythic Skin: Necrotic Knight Roadhog ☠️",
    "titulo_original": "New #Overwatch Mythic Skin: Necrotic Knight Roadhog ☠️",
@@ -2119,6 +2117,11 @@
    "titulo": "Sessão 1 da Overwatch: Widowmaker Cup no Fortnite no Oriente Médio",
    "titulo_original": "Overwatch: Widowmaker Cup Battle Royale in Middle East: Session 1 - Fortnite Tracker",
    "data": "2026-11-20T15:00:00+00:00"
+  },
+  {
+   "titulo": "Novas artes conceituais de skins de pesquisa do Overwatch",
+   "titulo_original": "All New #Overwatch Survey Skins 🎨",
+   "data": "2026-11-20T21:51:00+00:00"
   }
  ]
 }
