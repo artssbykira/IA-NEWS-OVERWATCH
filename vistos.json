@@ -1797,6 +1797,7 @@
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2oo7ijpj22p": "2026-11-19T18:10:00+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2oob5ae622p": "2026-11-19T18:11:00+00:00",
   "CBMijAFBVV95cUxOU04xdF9EVjZTQlVLeDM3ZTJWdHlSeThpcUp6WDRrdVMtdFljdE1uc3JFdGh2Qk9CcGtWSE9tck92YzNoVzZnMzFLeXRxUGZoQ1hWMWlBU2FoT3BLWDEzcE9LUmxNZmVTcFB3RkVwa2NnbTdwalgySlFEcUdQQmNjbFRCdFhpMW9GZV9qOQ": "2026-11-19T18:52:53+00:00",
+  "CBMilAFBVV95cUxPZFhyLU5NZmRzQjd3aWVlX3FVQTNnMUNFcHJrNjRtWFZhSVY1V2E5WkVsa1JZQ2staDBzclJReTBGVHppdHgtWXpaeExJMlc5eDRsamRhclFzMThpMk1wWXc2RWhGcHhIZjBITXFSUDQwQldVcGxVNW1YMWdCamViV1ZvUTBiZXJTNl9FcF8xdVRqZ0lv": "2026-11-19T19:55:25+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2oueujfq22v": "2026-11-19T20:00:00+00:00",
   "CBMinAFBVV95cUxNR2REVzRscUpmbW5CUmI5c1I3M3ktS1pWdWZWaElhZzI1RWVCNnFqMlBtWDJPZE9zTmlGOHg3WjVyM2ltRTkxYU9RMEtSNlhMbGNaTWRoS1ZhTWdRRDE2c1Nqc1lWakozS2lVVWJXNGs1QU9QZXZRQ2FwNnhDUlNtWFI2VkZLYy0zSkxZcmQ3S2ptM3ZHTGxlUUFoclU": "2026-11-19T20:31:22+00:00",
   "CBMilwFBVV95cUxQanFOSFBjdmRwVFV2NE9SWm5EWVgwODNrQVUtcS0zYm5CM2tDYlpLUWFMNERPaUZUX25TODRZMDd4S1JKSjBwRHpIS2dJSHZNVHAyOENTUGpCbXk3cFFPZlZTd0lMajRrWGhKOUstVWs0U0dmUktxVlN1ZVMyS1Y3SkhTQm96TTlRbE5uaFZCSnJyb3JIeUZV": "2026-11-19T20:59:34+00:00",
@@ -1808,9 +1809,17 @@
   "CBMif0FVX3lxTE1JVU90MzlDWEd2OGZ2dUxtZlN6NHlIOERfaGVhaHkwaXZVcUJhRXJNejlfYTZZYkZzZFM0QzBNVEh1Zm5wd0RQX1RoWGt4bm5Ha2xFVlRuOUdQTWdWZzZWVzNyNjZONUM0c0dsOU1jaExoSHUtVGRhVjByUTRfZlk": "2026-11-20T15:00:00+00:00",
   "CBMif0FVX3lxTE1uT1c0bTVlX2tvWENDN3hab1hoTHdhUXJLcjlYUGppYlRqam9BWmUxMEpWVjBXZVAwUG5ndFpSM0F4UllSaFJ1OEVKb2RGQlpvVVlxZEoxb1MxSjM3OU1iTjVRd1BYTTZ3bUt5VTBtZU1pZnBfNTNMVElmakt5OEU": "2026-11-20T18:00:00+00:00",
   "CBMihgFBVV95cUxORFkxUUZKUGE0VEJEQ0lJN2lGUDBITTB5enVMSGdLSi1SM2M0YWRhczNDYWlZTks1ZDJxa1IzN0RWSlJITDJkS1U2QWdLYVBiTG5SVElOZjk3N0V6YlQ3NGE1UWxRbmRneEpKWjBNbmdvNDFrVGptU3hZSVNNaXNsVDJpZkd4QQ": "2026-11-20T18:18:59+00:00",
+  "CBMiXEFVX3lxTFBjWXFVSXVsUEpJNmVPTWRSSUV2RTJJVXc5T0VSOGJidDluelVNa21XaGRzb0xiV3Y4UkNTeElRUlRhRTdqU1NoVkNjM2NDQ3lET1BHVUNKX2dZNTc3": "2026-11-20T19:06:32+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2rg5nteks2u": "2026-11-20T20:24:00+00:00",
+  "CBMif0FVX3lxTE9EdFdPZW5FYloxdUlUZlR1Nk9lMW1naW9hYXJRbktIZU9UOE1iY1BrQ1dqUmpqbVJEb3d3YnE0emVGcjVEN3Z2eTBoeU50RHhJa1FZcHc3eHAwOTZBU245ejBLamM1a3FKUzNrejNXYW5wdTlXbktuTC1KZFdoNDA": "2026-11-20T21:00:00+00:00",
+  "CBMijAFBVV95cUxOUWZwNWVrdU5xdmhQWndBQ1VpYUJjcFJBd3NPMG5iWUtIQlJGVHQycFIwaEczRHpDeTZNeUdMcWtMVng5NTRhU1A0bDZ6SWFLaHpJaTZNdWlPTHdKVlBwb0FxVXdIdldURm45V21tMGZ2UFdPdDd2cFFSQi1DLVVBYThPRTNoZTNmV0dndA": "2026-11-20T21:24:28+00:00",
   "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2rl2dtxzs2l": "2026-11-20T21:51:00+00:00",
-  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2rkzgsnqs2l": "2026-11-20T21:51:00+00:00"
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2rkzgsnqs2l": "2026-11-20T21:51:00+00:00",
+  "CBMid0FVX3lxTFBjWkh2SXNneTdRQjEwVmhiODR2QkJXTy0xbFRQY2tmalVYWExTSjJudXJnekxpZl9nRkhkOXdYNndJOVVtLVlzRm1rRXhzN1FHT0k1dVlVMHJndW5IcnZGS2JxX1ZCcTlldXNOdzBZclN0QkY3ME9R": "2026-11-20T22:19:15+00:00",
+  "CBMivAFBVV95cUxQa2ZES2d6Mkp4ZWw2QjE3N3B1MlRDT0w1NWNxdHptVkxDTUM0U3lGSVFPeTNQWjJ0UmhEY1lPQ0JqaVRrV1lMZTg3VkNYV2d4N040SWlobk9KTDZFb1d2VU5xQzBBVjFnX1JzWml3OVloV3hlcGpWUVdWMGJUajcwSDZ3RWstQlh2UlRzeUpjOWFNSXJKNmZuajBhMmdGblJqY1c2TWZOZzl5M2hLUXdwQjF1Zlo3Smd3QWdhVw": "2026-11-21T05:19:28+00:00",
+  "CBMimgFBVV95cUxOLUw4c2lwNjF5UkIyelk0UlE0eFpSUnJwODlNOXB3RzJOMjZBRXZWNzBudWFtbWhkRGlvWmFmbUV2Ul9tVjZlNU1QaUQ4TFFUVHNpaEMxWmpBT3NWS2ZjamdpR0tIRVoyVmhLamVTM203SGR6UVdXb3NfUTZEbnFwTktySURRZktUQlZGWWZOLWRTX3E5NEhvNmlB": "2026-11-21T11:20:53+00:00",
+  "CBMiwwFBVV95cUxQV2RROXZkQWlINTZROVM2WERUb0E0UGdyUU10QXdxampPWlJLaFlEaWFMMEM3eGUxWWhRelllUlJVZkFXQVpUR1NsVXMtWUZaWUhUMFFfTU9RLWdmS04yUUlZUk55V2Yxd0RRakh2eVBYb1lxckdRbDhBTFZBMkwtZlZLZF8tS3lnWDAtNGd0N044YW5ZLXFIRTlKNXBjYkxrZ3dRSmhsOVFkZmp1b3l5RDJ6VUNxdzE4a29MSzFMSS1femM": "2026-11-21T12:01:38+00:00",
+  "at://did:plc:fhixez76yufh767ylg5km7um/app.bsky.feed.post/3n2tbqczq6s2w": "2026-11-21T14:10:00+00:00"
  },
  "fontes": [
   "blizzard-tracker",
@@ -1823,31 +1832,6 @@
   "youtube"
  ],
  "recentes": [
-  {
-   "titulo": "New #Overwatch Mythic Skin: Necrotic Knight Roadhog ☠️",
-   "titulo_original": "New #Overwatch Mythic Skin: Necrotic Knight Roadhog ☠️",
-   "data": "2026-11-03T22:30:00+00:00"
-  },
-  {
-   "titulo": "New #Overwatch Shop Bundle: Trouble Student 🔻",
-   "titulo_original": "New #Overwatch Shop Bundle: Trouble Student 🔻",
-   "data": "2026-11-03T22:31:00+00:00"
-  },
-  {
-   "titulo": "New #Overwatch Shop Bundle: Dream City 🏙️",
-   "titulo_original": "New #Overwatch Shop Bundle: Dream City 🏙️",
-   "data": "2026-11-03T22:32:00+00:00"
-  },
-  {
-   "titulo": "New #Overwatch Shop Bundle: Forged Champions 🏆",
-   "titulo_original": "New #Overwatch Shop Bundle: Forged Champions 🏆",
-   "data": "2026-11-03T22:32:00+00:00"
-  },
-  {
-   "titulo": "Preparação para o Confronto Final no Meio da Temporada 5",
-   "titulo_original": "Reinado da Talon – Preparação do Confronto Final no Meio da T5 - Blizzard Entertainment",
-   "data": "2026-11-03T19:00:00+00:00"
-  },
   {
    "titulo": "Nova colaboração Overwatch x EVE Protocol lançada",
    "titulo_original": "Overwatch x EVE Protocol is out now ⚔️",
@@ -2122,6 +2106,31 @@
    "titulo": "Novas artes conceituais de skins de pesquisa do Overwatch",
    "titulo_original": "All New #Overwatch Survey Skins 🎨",
    "data": "2026-11-20T21:51:00+00:00"
+  },
+  {
+   "titulo": "Caça ao Saque do Junkrat garante 9 Caixas de Saque e XP em Dobro",
+   "titulo_original": "Overwatch 2 Junkrat’s Loot Hunt Offers 9 Loot Boxes and Double XP Through Nov 23 - Happy Gamer",
+   "data": "2026-11-20T21:24:28+00:00"
+  },
+  {
+   "titulo": "Vazamento aponta novidades de Widowmaker e Kiriko para 20 de novembro",
+   "titulo_original": "Overwatch Leak Points to a Widowmaker and Kiriko Drop on November 20 - Happy Gamer",
+   "data": "2026-11-20T22:19:15+00:00"
+  },
+  {
+   "titulo": "Card de Nome grátis nas finais do Overwatch Collegiate Homecoming",
+   "titulo_original": "Overwatch Collegiate Homecoming Finals Offer Free Name Card on Nov 21-22 - Happy Gamer",
+   "data": "2026-11-21T11:20:53+00:00"
+  },
+  {
+   "titulo": "Atualização de Meio de Temporada traz Stellar Blade e Mítica do Roadhog",
+   "titulo_original": "Análise: Overwatch recebe atualização de meio de temporada com colaboração de Stellar Blade e visual Mítico de Roadhog - Nintendo Blast",
+   "data": "2026-11-21T12:01:38+00:00"
+  },
+  {
+   "titulo": "New #Overwatch x Fortnite Shop Bundle 🛍️",
+   "titulo_original": "New #Overwatch x Fortnite Shop Bundle 🛍️",
+   "data": "2026-11-21T14:10:00+00:00"
   }
  ]
 }
